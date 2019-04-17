@@ -1,0 +1,27 @@
+.gray{
+    background-color: gray;
+    height: 900px;
+    width: 100%;
+}
+
+.box li{
+    background-color: white;
+    height: 600px;
+    width: 20%;
+    padding: 10px;
+    list-style: none;
+    color: red;
+    box-sizing: border-box;
+    display: inline-block;
+    /* インラインブロック→高さと幅の要素を持ったもの */
+    border: 5px solid black;
+    word-break: break-all;
+font-size: 30px;
+margin-right: 50px;
+text-align: center;
+word-break: break-all;
+}
+
+.box li:nth-child(3){
+    margin-right: 5%;
+}

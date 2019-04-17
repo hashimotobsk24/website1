@@ -1,0 +1,60 @@
+body {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+
+li {
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+li:nth-child(even){
+    background-color: orange;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify{
+    justify-content: space-around;
+}
+
+.align-items {
+    background-color:gray;
+    height: 300px;
+    align-items: center;
+}
+
+.direction {
+    flex-direction: row-reverse;
+}
+
+/* .flex {
+    display: inline-flex;
+} */
+
+.flex-inline {
+display: inline-flex;
+}
+
+.flex-inline span {
+    margin:10px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+span:nth-child(2n) {
+    background-color: orange;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
