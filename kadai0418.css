@@ -1,0 +1,61 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+    grid-template-rows: 50px 80% 50px;
+    grid-template-columns: 300px 1fr;
+}
+
+header {
+    background-color:red;
+    grid-area: header;
+}
+
+main {
+    background-color: pink;
+    grid-area: main;
+}
+
+aside {
+    background-color: aqua;
+    grid-area: aside;
+}
+
+footer {
+    background-color: blueviolet;
+    grid-area: footer;
+}
+
+
+.main-grid {
+    padding: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,1fr)
+}
+
+main div {
+    background-color: white;
+}
+
+@media screen and (max-width:500px) and (max-width:600px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12,1fr);
+    }
+    body {
+        grid-template-areas:
+    "header"
+    "main"
+    "aside"
+    "footer";
+
+    grid-template-rows: 10% 1fr 20% 10%;
+    grid-template-columns: auto;
+    }
+
+}
